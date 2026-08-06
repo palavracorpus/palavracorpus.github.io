@@ -39,8 +39,13 @@
     -webkit-font-smoothing:antialiased;
   }
 
-  .is-pt .lang-en,
-  .is-en .lang-pt{display:none;}
+  /* ---------- alternância de idioma ---------- */
+
+  .lang-pt,.lang-en,.lang-fr,.lang-es{display:none;}
+  .is-pt .lang-pt,
+  .is-en .lang-en,
+  .is-fr .lang-fr,
+  .is-es .lang-es{display:revert;}
 
   .wrap{
     max-width:62rem;
@@ -55,6 +60,7 @@
     justify-content:space-between;
     align-items:baseline;
     gap:1rem;
+    flex-wrap:wrap;
     border-bottom:1px solid var(--rule);
     padding-bottom:.75rem;
   }
@@ -65,13 +71,14 @@
     letter-spacing:.14em;
     text-transform:uppercase;
     color:var(--ink);
+    margin:0;
   }
 
   .switch{
     display:flex;
-    gap:.15rem;
+    gap:.1rem;
     font-family:"IBM Plex Mono",ui-monospace,monospace;
-    font-size:.7rem;
+    font-size:.72rem;
     letter-spacing:.1em;
   }
 
@@ -83,7 +90,7 @@
     color:var(--ink-soft);
     cursor:pointer;
     font:inherit;
-    padding:.3rem .5rem;
+    padding:.3rem .45rem;
     text-transform:uppercase;
   }
   .switch__btn:hover{color:var(--rubric);}
@@ -117,7 +124,6 @@
     color:var(--machine);
     margin:1.35rem 0 0;
   }
-  .entry__gram span{white-space:nowrap;}
   .entry__sep{color:var(--rule);padding:0 .5rem;}
 
   .entry__etym{
@@ -226,6 +232,7 @@
     text-align:right;
     white-space:nowrap;
     color:var(--ink);
+    margin:0;
   }
   .work__count small{
     display:block;
@@ -252,7 +259,13 @@
     color:var(--rubric);
     font-weight:500;
   }
-  .tally__lbl{grid-column:2;color:var(--ink-soft);text-transform:uppercase;font-size:.7rem;letter-spacing:.14em;}
+  .tally__lbl{
+    grid-column:2;
+    color:var(--ink-soft);
+    text-transform:uppercase;
+    font-size:.7rem;
+    letter-spacing:.14em;
+  }
 
   /* ---------- notas ---------- */
 
@@ -327,9 +340,11 @@
 
   <header class="topbar">
     <p class="topbar__mark">palavracorpus.org</p>
-    <div class="switch" role="group" aria-label="Idioma / Language">
-      <button type="button" class="switch__btn" data-lang="pt" aria-pressed="true">Português</button>
-      <button type="button" class="switch__btn" data-lang="en" aria-pressed="false">English</button>
+    <div class="switch" role="group" aria-label="Idioma / Language / Langue / Idioma">
+      <button type="button" class="switch__btn" data-lang="pt" aria-pressed="true" lang="pt">PT</button>
+      <button type="button" class="switch__btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
+      <button type="button" class="switch__btn" data-lang="fr" aria-pressed="false" lang="fr">FR</button>
+      <button type="button" class="switch__btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
     </div>
   </header>
 
@@ -339,11 +354,17 @@
       <h1 class="entry__head">Palavra</h1>
 
       <p class="entry__gram">
-        <span class="lang-pt">Corpus lexicográfico multilíngue</span><span class="lang-en">Multilingual lexicographic corpus</span><span class="entry__sep">·</span><span class="lang-pt">pt · es · fr · en</span><span class="lang-en">pt · es · fr · en</span>
+        <span class="lang-pt">Corpus lexicográfico multilíngue</span><span class="lang-es">Corpus lexicográfico multilingüe</span><span class="lang-fr">Corpus lexicographique multilingue</span><span class="lang-en">Multilingual lexicographic corpus</span><span class="entry__sep">·</span><span>pt · es · fr · en</span>
       </p>
 
       <p class="entry__etym lang-pt">
         do lat. <b>parabŏla</b>, do gr. <b>παραβολή</b> — literalmente, «pôr ao lado». Português, espanhol e francês nomeiam a palavra com um termo que significa comparação.
+      </p>
+      <p class="entry__etym lang-es">
+        del lat. <b>parabŏla</b>, del gr. <b>παραβολή</b> — literalmente, «poner al lado». El portugués, el español y el francés nombran la palabra con un término que significa comparación.
+      </p>
+      <p class="entry__etym lang-fr">
+        du lat. <b>parabŏla</b>, du gr. <b>παραβολή</b> — littéralement, « mettre à côté ». Le portugais, l'espagnol et le français nomment tous le mot par un terme qui signifie comparaison.
       </p>
       <p class="entry__etym lang-en">
         from Lat. <b>parabŏla</b>, from Gr. <b>παραβολή</b> — literally, "to set side by side." Portuguese, Spanish and French all name the word with a term that means comparison.
@@ -352,81 +373,93 @@
       <ol class="senses">
         <li class="reveal">
           <span class="lang-pt">Base de dados de dicionários históricos das línguas portuguesa, espanhola, francesa e inglesa, estruturada verbete a verbete para consulta e análise computacional.</span>
+          <span class="lang-es">Base de datos de diccionarios históricos en portugués, español, francés e inglés, estructurada entrada por entrada para consulta y análisis computacional.</span>
+          <span class="lang-fr">Base de données de dictionnaires historiques en portugais, espagnol, français et anglais, structurée entrée par entrée pour la consultation et l'analyse computationnelle.</span>
           <span class="lang-en">A database of historical dictionaries in Portuguese, Spanish, French and English, structured entry by entry for consultation and computational analysis.</span>
         </li>
         <li class="reveal">
           <span class="lang-pt">Instrumento de pesquisa em história conceitual. Os dicionários registram camadas de sentido sedimentadas ao longo do tempo — <em>o que permanece, o que se desloca, o que desaparece</em>.</span>
+          <span class="lang-es">Instrumento de investigación en historia conceptual. Los diccionarios registran capas de sentido sedimentadas a lo largo del tiempo — <em>lo que permanece, lo que se desplaza, lo que desaparece</em>.</span>
+          <span class="lang-fr">Instrument de recherche en histoire conceptuelle. Les dictionnaires enregistrent des couches de sens sédimentées au fil du temps — <em>ce qui demeure, ce qui se déplace, ce qui disparaît</em>.</span>
           <span class="lang-en">A research instrument for conceptual history. Dictionaries record layers of meaning sedimented over time — <em>what persists, what shifts, what disappears</em>.</span>
         </li>
         <li class="reveal">
           <span class="lang-pt">Projeto em construção no Programa de Pós-Graduação em História da Universidade Federal de Santa Catarina. A interface de consulta será aberta ao público.</span>
+          <span class="lang-es">Proyecto en construcción en el Programa de Posgrado en Historia de la Universidad Federal de Santa Catarina, Brasil. La interfaz de consulta será abierta al público.</span>
+          <span class="lang-fr">Projet en cours au Programme d'études supérieures en histoire de l'Université fédérale de Santa Catarina, Brésil. L'interface de consultation sera ouverte au public.</span>
           <span class="lang-en">A project under construction at the Graduate Program in History, Federal University of Santa Catarina, Brazil. The search interface will be open to the public.</span>
         </li>
       </ol>
     </article>
 
     <section class="band">
-      <p class="band__label"><span class="lang-pt">Obras</span><span class="lang-en">Works</span></p>
+      <p class="band__label"><span class="lang-pt">Obras</span><span class="lang-es">Obras</span><span class="lang-fr">Œuvres</span><span class="lang-en">Works</span></p>
 
       <div class="work">
         <span class="work__sig">BLU</span>
         <div>
           <p class="work__title">Raphael Bluteau, <i>Vocabulario Portuguez e Latino</i></p>
-          <p class="work__meta"><span class="lang-pt">português · 1712–1728 </span><span class="lang-en">Portuguese · 1712–1728 </span></p>
+          <p class="work__meta"><span class="lang-pt">português</span><span class="lang-es">portugués</span><span class="lang-fr">portugais</span><span class="lang-en">Portuguese</span> · 1712–1728</p>
         </div>
-        <p class="work__count"><span class="lang-pt">35.767</span><span class="lang-en">35,767</span><small><span class="lang-pt">verbetes</span><span class="lang-en">entries</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">35.767</span><span class="lang-fr">35 767</span><span class="lang-en">35,767</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
       <div class="work">
         <span class="work__sig">AFR</span>
         <div>
           <p class="work__title">Académie française, <i>Dictionnaire</i>, 1<sup>re</sup> éd.</p>
-          <p class="work__meta"><span class="lang-pt">francês · 1694 </span><span class="lang-en">French · 1694 </span></p>
+          <p class="work__meta"><span class="lang-pt">francês</span><span class="lang-es">francés</span><span class="lang-fr">français</span><span class="lang-en">French</span> · 1694</p>
         </div>
-        <p class="work__count"><span class="lang-pt">20.982</span><span class="lang-en">20,982</span><small><span class="lang-pt">verbetes</span><span class="lang-en">entries</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">20.982</span><span class="lang-fr">20 982</span><span class="lang-en">20,982</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
       <div class="work">
         <span class="work__sig">RAE</span>
         <div>
           <p class="work__title">Real Academia Española, <i>Diccionario de Autoridades</i></p>
-          <p class="work__meta"><span class="lang-pt">espanhol · 1726–1739 </span><span class="lang-en">Spanish · 1726–1739 </span></p>
+          <p class="work__meta"><span class="lang-pt">espanhol</span><span class="lang-es">español</span><span class="lang-fr">espagnol</span><span class="lang-en">Spanish</span> · 1726–1739</p>
         </div>
-        <p class="work__count"><span class="lang-pt">69.420</span><span class="lang-en">69,420</span><small><span class="lang-pt">verbetes</span><span class="lang-en">entries</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">69.420</span><span class="lang-fr">69 420</span><span class="lang-en">69,420</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
       <div class="work work--pending">
         <span class="work__sig">MOR</span>
         <div>
           <p class="work__title">António de Morais Silva, <i>Diccionario da Lingua Portugueza</i></p>
-          <p class="work__meta"><span class="lang-pt">português · 1789 </span><span class="lang-en">Portuguese · 1789 </span></p>
+          <p class="work__meta"><span class="lang-pt">português</span><span class="lang-es">portugués</span><span class="lang-fr">portugais</span><span class="lang-en">Portuguese</span> · 1789</p>
         </div>
-        <p class="work__count">—<small><span class="lang-pt">em preparação</span><span class="lang-en">in preparation</span></small></p>
+        <p class="work__count">—<small><span class="lang-pt">em preparação</span><span class="lang-es">en preparación</span><span class="lang-fr">en préparation</span><span class="lang-en">in preparation</span></small></p>
       </div>
 
       <div class="work work--pending">
         <span class="work__sig">WEB</span>
         <div>
           <p class="work__title">Noah Webster, <i>Revised Unabridged Dictionary</i></p>
-          <p class="work__meta"><span class="lang-pt">inglês · 1913 </span><span class="lang-en">English · 1913 </span></p>
+          <p class="work__meta"><span class="lang-pt">inglês</span><span class="lang-es">inglés</span><span class="lang-fr">anglais</span><span class="lang-en">English</span> · 1913</p>
         </div>
-        <p class="work__count">—<small><span class="lang-pt">em preparação</span><span class="lang-en">in preparation</span></small></p>
+        <p class="work__count">—<small><span class="lang-pt">em preparação</span><span class="lang-es">en preparación</span><span class="lang-fr">en préparation</span><span class="lang-en">in preparation</span></small></p>
       </div>
 
       <div class="tally">
         <span></span>
-        <span class="tally__lbl"><span class="lang-pt">Disponíveis hoje</span><span class="lang-en">Available today</span></span>
-        <span class="tally__num"><span class="lang-pt">126.169</span><span class="lang-en">126,169</span></span>
+        <span class="tally__lbl"><span class="lang-pt">Disponíveis hoje</span><span class="lang-es">Disponibles hoy</span><span class="lang-fr">Disponibles aujourd'hui</span><span class="lang-en">Available today</span></span>
+        <span class="tally__num"><span class="lang-pt lang-es">126.169</span><span class="lang-fr">126 169</span><span class="lang-en">126,169</span></span>
       </div>
     </section>
 
     <section class="band">
-      <p class="band__label"><span class="lang-pt">Estado do projeto</span><span class="lang-en">Project status</span></p>
+      <p class="band__label"><span class="lang-pt">Estado do projeto</span><span class="lang-es">Estado del proyecto</span><span class="lang-fr">État du projet</span><span class="lang-en">Project status</span></p>
 
       <div class="cols">
         <div class="note">
           <p class="lang-pt">O corpus está em constituição. Três obras foram extraídas e validadas; duas estão em processamento. A interface de consulta e os conjuntos de dados abertos serão publicados neste endereço.</p>
           <p class="lang-pt"><strong>Proveniência.</strong> Todas as obras são de domínio público. As versões digitalizadas pertencem às instituições que as produziram e são creditadas obra a obra, com ligação à fonte original. Cada extração é acompanhada de registro de proveniência e de validação sem perda.</p>
+
+          <p class="lang-es">El corpus está en construcción. Tres obras han sido extraídas y validadas; dos están en procesamiento. La interfaz de consulta y los conjuntos de datos abiertos se publicarán en esta dirección.</p>
+          <p class="lang-es"><strong>Procedencia.</strong> Todas las obras son de dominio público. Las versiones digitalizadas pertenecen a las instituciones que las produjeron y se acreditan obra por obra, con enlace a la fuente original. Cada extracción va acompañada de un registro de procedencia y de una validación sin pérdida.</p>
+
+          <p class="lang-fr">Le corpus est en cours de constitution. Trois œuvres ont été extraites et validées ; deux sont en traitement. L'interface de consultation et les jeux de données ouverts seront publiés à cette adresse.</p>
+          <p class="lang-fr"><strong>Provenance.</strong> Toutes les œuvres sont dans le domaine public. Les versions numérisées appartiennent aux institutions qui les ont produites et sont créditées œuvre par œuvre, avec un lien vers la source originale. Chaque extraction est accompagnée d'un registre de provenance et d'une validation sans perte.</p>
 
           <p class="lang-en">The corpus is being assembled. Three works have been extracted and validated; two are in processing. The search interface and open datasets will be published at this address.</p>
           <p class="lang-en"><strong>Provenance.</strong> All source works are in the public domain. The digitised versions belong to the institutions that produced them and are credited work by work, with links to the original source. Every extraction carries a provenance record and a zero-loss validation report.</p>
@@ -434,10 +467,11 @@
 
         <div class="note">
           <p class="lang-pt"><strong>Contato.</strong> Renato Monteiro — pesquisador de pós-doutorado, Programa de Pós-Graduação em História, UFSC. Supervisão: Prof. Dr. Rodrigo Bonaldo. Apoio: FAPESC.</p>
-          <p class="lang-pt"><a href="mailto:resnatus@gmail.com">resnatus@gmail.com</a></p>
-
+          <p class="lang-es"><strong>Contacto.</strong> Renato Monteiro — investigador posdoctoral, Programa de Posgrado en Historia, Universidad Federal de Santa Catarina (UFSC), Brasil. Supervisión: Prof. Dr. Rodrigo Bonaldo. Apoyo: FAPESC.</p>
+          <p class="lang-fr"><strong>Contact.</strong> Renato Monteiro — chercheur postdoctoral, Programme d'études supérieures en histoire, Université fédérale de Santa Catarina (UFSC), Brésil. Direction : Prof. Rodrigo Bonaldo. Soutien : FAPESC.</p>
           <p class="lang-en"><strong>Contact.</strong> Renato Monteiro — postdoctoral researcher, Graduate Program in History, Federal University of Santa Catarina (UFSC), Brazil. Supervisor: Prof. Rodrigo Bonaldo. Funded by FAPESC.</p>
-          <p class="lang-en"><a href="mailto:resnatus@gmail.com">resnatus@gmail.com</a></p>
+
+          <p><a href="mailto:resnatus@gmail.com">resnatus@gmail.com</a></p>
 
           <p class="cite">Monteiro, R. (2026).<br><i>Palavra: Multilingual Lexicographic Corpus.</i><br>UFSC. palavracorpus.org</p>
         </div>
@@ -447,8 +481,8 @@
   </main>
 
   <footer class="foot">
-    <span>Palavra — <span class="lang-pt">Corpus Lexicográfico Multilíngue</span><span class="lang-en">Multilingual Lexicographic Corpus</span></span>
-    <span><span class="lang-pt">Florianópolis · Brasil</span><span class="lang-en">Florianópolis · Brazil</span></span>
+    <span>Palavra — <span class="lang-pt">Corpus Lexicográfico Multilíngue</span><span class="lang-es">Corpus Lexicográfico Multilingüe</span><span class="lang-fr">Corpus Lexicographique Multilingue</span><span class="lang-en">Multilingual Lexicographic Corpus</span></span>
+    <span>Florianópolis · <span class="lang-pt lang-es">Brasil</span><span class="lang-fr">Brésil</span><span class="lang-en">Brazil</span></span>
   </footer>
 
 </div>
@@ -457,23 +491,24 @@
   (function () {
     var root = document.documentElement;
     var buttons = document.querySelectorAll('.switch__btn');
+    var codes = { pt: 'pt-BR', es: 'es', fr: 'fr', en: 'en' };
 
     function setLang(lang) {
-      root.classList.toggle('is-pt', lang === 'pt');
-      root.classList.toggle('is-en', lang === 'en');
-      root.setAttribute('lang', lang === 'pt' ? 'pt-BR' : 'en');
+      Object.keys(codes).forEach(function (c) {
+        root.classList.toggle('is-' + c, c === lang);
+      });
+      root.setAttribute('lang', codes[lang]);
       buttons.forEach(function (b) {
         b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
       });
     }
 
+    var pref = (navigator.language || '').slice(0, 2).toLowerCase();
+    setLang(codes[pref] ? pref : 'en');
+
     buttons.forEach(function (b) {
       b.addEventListener('click', function () { setLang(b.dataset.lang); });
     });
-
-    if ((navigator.language || '').slice(0, 2).toLowerCase() !== 'pt') {
-      setLang('en');
-    }
   })();
 </script>
 </body>
