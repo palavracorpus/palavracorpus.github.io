@@ -9,18 +9,21 @@
 <meta property="og:description" content="Dicionários históricos em português, espanhol, francês e inglês, estruturados verbete a verbete.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://palavracorpus.org">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:image" content="https://palavracorpus.org/palavra-logo-horizontal.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,300..800;1,300..600&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#E9E8E2;
-    --leaf:#F3F2ED;
-    --ink:#191A1C;
-    --ink-soft:#55565A;
-    --rubric:#8C2318;
-    --rule:#C6C4BA;
-    --machine:#2E3550;
+    --paper:#EDE5D3;
+    --leaf:#F4EEE0;
+    --ink:#2A2622;
+    --ink-soft:#6E6454;
+    --rubric:#9B3E21;
+    --rule:#C4B89E;
+    --machine:#5B5340;
     --measure:34rem;
   }
 
@@ -74,6 +77,31 @@
     margin:0;
   }
 
+  .topbar__brand{
+    display:flex;
+    align-items:center;
+    gap:.7rem;
+  }
+
+  .topbar__mark-img{
+    width:2.1rem;
+    height:auto;
+    display:block;
+  }
+
+  .entry__logo{
+    display:block;
+    width:min(20rem,68vw);
+    height:auto;
+    margin:0 0 -.5rem -.6rem;
+  }
+
+  .links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.4rem 1.4rem;
+  }
+
   .switch{
     display:flex;
     gap:.1rem;
@@ -108,12 +136,8 @@
   }
 
   .entry__head{
-    font-family:"Petrona",Georgia,serif;
-    font-weight:500;
-    font-size:clamp(3.6rem,13vw,8.5rem);
-    line-height:.9;
-    letter-spacing:-0.02em;
     margin:0;
+    font-size:0;
   }
 
   .entry__gram{
@@ -339,7 +363,10 @@
 <div class="wrap">
 
   <header class="topbar">
-    <p class="topbar__mark">palavracorpus.org</p>
+    <div class="topbar__brand">
+      <img class="topbar__mark-img" src="palavra-marca.png" alt="">
+      <p class="topbar__mark">palavracorpus.org</p>
+    </div>
     <div class="switch" role="group" aria-label="Idioma / Language / Langue / Idioma">
       <button type="button" class="switch__btn" data-lang="pt" aria-pressed="true" lang="pt">PT</button>
       <button type="button" class="switch__btn" data-lang="es" aria-pressed="false" lang="es">ES</button>
@@ -351,7 +378,8 @@
   <main>
 
     <article class="entry">
-      <h1 class="entry__head">Palavra</h1>
+      <h1 class="entry__head"><img class="entry__logo" src="palavra-logo.png"
+        alt="Palavra — Corpus Lexicográfico Multilíngue"></h1>
 
       <p class="entry__gram">
         <span class="lang-pt">Corpus lexicográfico multilíngue</span><span class="lang-es">Corpus lexicográfico multilingüe</span><span class="lang-fr">Corpus lexicographique multilingue</span><span class="lang-en">Multilingual lexicographic corpus</span><span class="entry__sep">·</span><span>pt · es · fr · en</span>
@@ -471,7 +499,11 @@
           <p class="lang-fr"><strong>Contact.</strong> Renato Monteiro — chercheur postdoctoral, Programme d'études supérieures en histoire, Université fédérale de Santa Catarina (UFSC), Brésil. Direction : Prof. Rodrigo Bonaldo. Soutien : FAPESC.</p>
           <p class="lang-en"><strong>Contact.</strong> Renato Monteiro — postdoctoral researcher, Graduate Program in History, Federal University of Santa Catarina (UFSC), Brazil. Supervisor: Prof. Rodrigo Bonaldo. Funded by FAPESC.</p>
 
-          <p><a href="mailto:resnatus@gmail.com">resnatus@gmail.com</a></p>
+          <p class="links">
+            <a href="mailto:resnatus@gmail.com">resnatus@gmail.com</a>
+            <a href="https://instagram.com/palavracorpus" rel="me noopener"
+               target="_blank">@palavracorpus</a>
+          </p>
 
           <p class="cite">Monteiro, R. (2026).<br><i>Palavra: Multilingual Lexicographic Corpus.</i><br>UFSC. palavracorpus.org</p>
         </div>
@@ -482,6 +514,7 @@
 
   <footer class="foot">
     <span>Palavra — <span class="lang-pt">Corpus Lexicográfico Multilíngue</span><span class="lang-es">Corpus Lexicográfico Multilingüe</span><span class="lang-fr">Corpus Lexicographique Multilingue</span><span class="lang-en">Multilingual Lexicographic Corpus</span></span>
+    <a href="https://instagram.com/palavracorpus" rel="me noopener" target="_blank">Instagram · @palavracorpus</a>
     <span>Florianópolis · <span class="lang-pt lang-es">Brasil</span><span class="lang-fr">Brésil</span><span class="lang-en">Brazil</span></span>
   </footer>
 
