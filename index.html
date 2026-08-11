@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Palavra — Corpus Lexicográfico Multilíngue</title>
-<meta name="description" content="Palavra: corpus lexicográfico multilíngue. Dicionários históricos das línguas portuguesa, espanhola, francesa e inglesa, estruturados para consulta e análise computacional.">
+<meta name="description" content="Palavra: corpus lexicográfico multilíngue. Oito dicionários históricos em português, espanhol, francês e inglês — 535.724 verbetes estruturados para consulta e análise computacional.">
 <meta property="og:title" content="Palavra — Corpus Lexicográfico Multilíngue">
 <meta property="og:description" content="Dicionários históricos em português, espanhol, francês e inglês, estruturados verbete a verbete.">
 <meta property="og:type" content="website">
@@ -293,6 +293,19 @@
 
   /* ---------- notas ---------- */
 
+  .timeline-wrap{
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:.25rem 0 0;
+  }
+
+  .timeline{
+    display:block;
+    width:100%;
+    min-width:40rem;
+    height:auto;
+  }
+
   .cols{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
@@ -382,7 +395,7 @@
         alt="Palavra — Corpus Lexicográfico Multilíngue"></h1>
 
       <p class="entry__gram">
-        <span class="lang-pt">Corpus lexicográfico multilíngue</span><span class="lang-es">Corpus lexicográfico multilingüe</span><span class="lang-fr">Corpus lexicographique multilingue</span><span class="lang-en">Multilingual lexicographic corpus</span><span class="entry__sep">·</span><span>pt · es · fr · en</span>
+        <span class="lang-pt">Corpus lexicográfico multilíngue</span><span class="lang-es">Corpus lexicográfico multilingüe</span><span class="lang-fr">Corpus lexicographique multilingue</span><span class="lang-en">Multilingual lexicographic corpus</span><span class="entry__sep">·</span><span>pt · es · fr · en</span><span class="entry__sep">·</span><span>1694 — 1890</span>
       </p>
 
       <p class="entry__etym lang-pt">
@@ -429,7 +442,7 @@
           <p class="work__title">Raphael Bluteau, <i>Vocabulario Portuguez e Latino</i></p>
           <p class="work__meta"><span class="lang-pt">português</span><span class="lang-es">portugués</span><span class="lang-fr">portugais</span><span class="lang-en">Portuguese</span> · 1712–1728</p>
         </div>
-        <p class="work__count"><span class="lang-pt lang-es">35.767</span><span class="lang-fr">35 767</span><span class="lang-en">35,767</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">35.767</span><span class="lang-fr">35 767</span><span class="lang-en">35,767</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
       <div class="work">
@@ -438,7 +451,16 @@
           <p class="work__title">Académie française, <i>Dictionnaire</i>, 1<sup>re</sup> éd.</p>
           <p class="work__meta"><span class="lang-pt">francês</span><span class="lang-es">francés</span><span class="lang-fr">français</span><span class="lang-en">French</span> · 1694</p>
         </div>
-        <p class="work__count"><span class="lang-pt lang-es">20.982</span><span class="lang-fr">20 982</span><span class="lang-en">20,982</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">20.982</span><span class="lang-fr">20 982</span><span class="lang-en">20,982</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
+      </div>
+
+      <div class="work">
+        <span class="work__sig">AFR</span>
+        <div>
+          <p class="work__title">Académie française, <i>Dictionnaire</i>, 5<sup>e</sup> éd.</p>
+          <p class="work__meta"><span class="lang-pt">francês</span><span class="lang-es">francés</span><span class="lang-fr">français</span><span class="lang-en">French</span> · 1798</p>
+        </div>
+        <p class="work__count"><span class="lang-pt lang-es">38.357</span><span class="lang-fr">38 357</span><span class="lang-en">38,357</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
       <div class="work">
@@ -447,31 +469,63 @@
           <p class="work__title">Real Academia Española, <i>Diccionario de Autoridades</i></p>
           <p class="work__meta"><span class="lang-pt">espanhol</span><span class="lang-es">español</span><span class="lang-fr">espagnol</span><span class="lang-en">Spanish</span> · 1726–1739</p>
         </div>
-        <p class="work__count"><span class="lang-pt lang-es">69.420</span><span class="lang-fr">69 420</span><span class="lang-en">69,420</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">69.420</span><span class="lang-fr">69 420</span><span class="lang-en">69,420</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
-      <div class="work work--pending">
+      <div class="work">
         <span class="work__sig">MOR</span>
         <div>
           <p class="work__title">António de Morais Silva, <i>Diccionario da Lingua Portugueza</i></p>
           <p class="work__meta"><span class="lang-pt">português</span><span class="lang-es">portugués</span><span class="lang-fr">portugais</span><span class="lang-en">Portuguese</span> · 1789</p>
         </div>
-        <p class="work__count">—<small><span class="lang-pt">em preparação</span><span class="lang-es">en preparación</span><span class="lang-fr">en préparation</span><span class="lang-en">in preparation</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">34.814</span><span class="lang-fr">34 814</span><span class="lang-en">34,814</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
-      <div class="work work--pending">
+      <div class="work">
+        <span class="work__sig">JOH</span>
+        <div>
+          <p class="work__title">Samuel Johnson, <i>A Dictionary of the English Language</i></p>
+          <p class="work__meta"><span class="lang-pt">inglês</span><span class="lang-es">inglés</span><span class="lang-fr">anglais</span><span class="lang-en">English</span> · 1755 · 1773</p>
+        </div>
+        <p class="work__count"><span class="lang-pt lang-es">83.890</span><span class="lang-fr">83 890</span><span class="lang-en">83,890</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
+      </div>
+
+      <div class="work">
         <span class="work__sig">WEB</span>
         <div>
-          <p class="work__title">Noah Webster, <i>Revised Unabridged Dictionary</i></p>
-          <p class="work__meta"><span class="lang-pt">inglês</span><span class="lang-es">inglés</span><span class="lang-fr">anglais</span><span class="lang-en">English</span> · 1913</p>
+          <p class="work__title">Noah Webster, <i>An American Dictionary of the English Language</i></p>
+          <p class="work__meta"><span class="lang-pt">inglês</span><span class="lang-es">inglés</span><span class="lang-fr">anglais</span><span class="lang-en">English</span> · 1806–1844</p>
         </div>
-        <p class="work__count">—<small><span class="lang-pt">em preparação</span><span class="lang-es">en preparación</span><span class="lang-fr">en préparation</span><span class="lang-en">in preparation</span></small></p>
+        <p class="work__count"><span class="lang-pt lang-es">120.925</span><span class="lang-fr">120 925</span><span class="lang-en">120,925</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
+      </div>
+
+      <div class="work">
+        <span class="work__sig">WEB</span>
+        <div>
+          <p class="work__title">Webster, <i>Revised Unabridged Dictionary</i></p>
+          <p class="work__meta"><span class="lang-pt">inglês</span><span class="lang-es">inglés</span><span class="lang-fr">anglais</span><span class="lang-en">English</span> · 1890</p>
+        </div>
+        <p class="work__count"><span class="lang-pt lang-es">131.569</span><span class="lang-fr">131 569</span><span class="lang-en">131,569</span><small><span class="lang-pt">verbetes</span><span class="lang-es">entradas</span><span class="lang-fr">entrées</span><span class="lang-en">entries</span></small></p>
       </div>
 
       <div class="tally">
         <span></span>
-        <span class="tally__lbl"><span class="lang-pt">Disponíveis hoje</span><span class="lang-es">Disponibles hoy</span><span class="lang-fr">Disponibles aujourd'hui</span><span class="lang-en">Available today</span></span>
-        <span class="tally__num"><span class="lang-pt lang-es">126.169</span><span class="lang-fr">126 169</span><span class="lang-en">126,169</span></span>
+        <span class="tally__lbl"><span class="lang-pt">Oito obras</span><span class="lang-es">Ocho obras</span><span class="lang-fr">Huit œuvres</span><span class="lang-en">Eight works</span></span>
+        <span class="tally__num"><span class="lang-pt lang-es">535.724</span><span class="lang-fr">535 724</span><span class="lang-en">535,724</span></span>
+      </div>
+    </section>
+
+    <section class="band">
+      <p class="band__label"><span class="lang-pt">Escopo temporal</span><span class="lang-es">Alcance temporal</span><span class="lang-fr">Portée temporelle</span><span class="lang-en">Temporal scope</span></p>
+      <div class="timeline-wrap">
+        <svg class="timeline" viewBox="0 0 1000 222" role="img"
+             aria-label="Linha do tempo das oito obras do corpus, de 1694 a 1890, distribuídas por língua">
+          <line x1="111.9" y1="28" x2="111.9" y2="190" stroke="var(--rule)" stroke-width="1" opacity=".55"/><line x1="321.4" y1="28" x2="321.4" y2="190" stroke="var(--rule)" stroke-width="1" opacity=".55"/><line x1="531.0" y1="28" x2="531.0" y2="190" stroke="var(--rule)" stroke-width="1" opacity=".55"/><line x1="740.5" y1="28" x2="740.5" y2="190" stroke="var(--rule)" stroke-width="1" opacity=".55"/><line x1="950.0" y1="28" x2="950.0" y2="190" stroke="var(--rule)" stroke-width="1" opacity=".55"/>
+          <line x1="54" y1="190" x2="962" y2="190" stroke="var(--rule)" stroke-width="1.5"/>
+          <text x="52" y="52" text-anchor="end" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">FR</text><text x="52" y="90" text-anchor="end" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">PT</text><text x="52" y="128" text-anchor="end" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">ES</text><text x="52" y="166" text-anchor="end" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">EN</text>
+          <rect x="78.8" y="38" width="16" height="16" rx="3" fill="var(--ink)"/><text x="86.8" y="30" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">AFR · 1694</text><rect x="514.6" y="38" width="16" height="16" rx="3" fill="var(--ink)"/><text x="522.6" y="30" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">AFR · 1798</text><rect x="162.2" y="76" width="67.0" height="16" rx="3" fill="var(--ink)"/><text x="195.7" y="68" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">BLU · 1712–1728</text><rect x="476.9" y="76" width="16" height="16" rx="3" fill="var(--ink)"/><text x="484.9" y="68" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">MOR · 1789</text><rect x="220.9" y="114" width="54.4" height="16" rx="3" fill="var(--ink)"/><text x="248.1" y="106" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">RAE · 1726–1739</text><rect x="342.4" y="152" width="75.4" height="16" rx="3" fill="var(--ink)"/><text x="380.1" y="144" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">JOH · 1755 · 1773</text><rect x="556.1" y="152" width="159.2" height="16" rx="3" fill="var(--ink)"/><text x="635.7" y="144" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">WEB · 1806–1844</text><rect x="900.1" y="152" width="16" height="16" rx="3" fill="var(--ink)"/><text x="908.1" y="144" text-anchor="middle" font-size="16" fill="var(--ink)" font-family="Petrona, Georgia, serif">WEB · 1890</text>
+          <text x="111.9" y="210" text-anchor="middle" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">1700</text><text x="321.4" y="210" text-anchor="middle" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">1750</text><text x="531.0" y="210" text-anchor="middle" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">1800</text><text x="740.5" y="210" text-anchor="middle" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">1850</text><text x="950.0" y="210" text-anchor="middle" font-size="15" fill="var(--ink-soft)" font-family="IBM Plex Mono, monospace">1900</text>
+        </svg>
       </div>
     </section>
 
@@ -480,16 +534,16 @@
 
       <div class="cols">
         <div class="note">
-          <p class="lang-pt">O corpus está em constituição. Três obras foram extraídas e validadas; duas estão em processamento. A interface de consulta e os conjuntos de dados abertos serão publicados neste endereço.</p>
+          <p class="lang-pt">Oito obras foram extraídas e validadas. A etapa em curso é a unificação num esquema comum, que tornará possível a consulta cruzada. A interface e os conjuntos de dados abertos serão publicados neste endereço.</p>
           <p class="lang-pt"><strong>Proveniência.</strong> Todas as obras são de domínio público. As versões digitalizadas pertencem às instituições que as produziram e são creditadas obra a obra, com ligação à fonte original. Cada extração é acompanhada de registro de proveniência e de validação sem perda.</p>
 
-          <p class="lang-es">El corpus está en construcción. Tres obras han sido extraídas y validadas; dos están en procesamiento. La interfaz de consulta y los conjuntos de datos abiertos se publicarán en esta dirección.</p>
+          <p class="lang-es">Ocho obras han sido extraídas y validadas. La etapa en curso es la unificación en un esquema común, que hará posible la consulta cruzada. La interfaz y los conjuntos de datos abiertos se publicarán en esta dirección.</p>
           <p class="lang-es"><strong>Procedencia.</strong> Todas las obras son de dominio público. Las versiones digitalizadas pertenecen a las instituciones que las produjeron y se acreditan obra por obra, con enlace a la fuente original. Cada extracción va acompañada de un registro de procedencia y de una validación sin pérdida.</p>
 
-          <p class="lang-fr">Le corpus est en cours de constitution. Trois œuvres ont été extraites et validées ; deux sont en traitement. L'interface de consultation et les jeux de données ouverts seront publiés à cette adresse.</p>
+          <p class="lang-fr">Huit œuvres ont été extraites et validées. L'étape en cours est l'unification dans un schéma commun, qui rendra possible la consultation croisée. L'interface et les jeux de données ouverts seront publiés à cette adresse.</p>
           <p class="lang-fr"><strong>Provenance.</strong> Toutes les œuvres sont dans le domaine public. Les versions numérisées appartiennent aux institutions qui les ont produites et sont créditées œuvre par œuvre, avec un lien vers la source originale. Chaque extraction est accompagnée d'un registre de provenance et d'une validation sans perte.</p>
 
-          <p class="lang-en">The corpus is being assembled. Three works have been extracted and validated; two are in processing. The search interface and open datasets will be published at this address.</p>
+          <p class="lang-en">Eight works have been extracted and validated. The current stage is unification under a common schema, which will make cross-searching possible. The interface and open datasets will be published at this address.</p>
           <p class="lang-en"><strong>Provenance.</strong> All source works are in the public domain. The digitised versions belong to the institutions that produced them and are credited work by work, with links to the original source. Every extraction carries a provenance record and a zero-loss validation report.</p>
         </div>
 
