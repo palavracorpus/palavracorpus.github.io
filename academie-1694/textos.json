@@ -1,0 +1,824 @@
+{
+  "_nota": "Conteúdo quadrilíngue da página da Académie 1694. Campo 'texto': em fr é a transcrição modernizada; em pt/es/en é a tradução dessa transcrição. Campo 'estado': transcrito | parcial | pendente | sem_texto. Só há texto onde foi conferido contra a imagem.",
+  "idiomas": [
+    "fr",
+    "pt",
+    "es",
+    "en"
+  ],
+  "padrao": "en",
+  "gallica": {
+    "ark": "bpt6k12803924",
+    "base": "https://gallica.bnf.fr/ark:/12148/bpt6k12803924/f",
+    "deslocamento": 8,
+    "_nota": "vista 1 = f9. CONFERIR: abrir f9 e confirmar que corresponde ao frontispício."
+  },
+  "ui": {
+    "fr": {
+      "sobrescrito": "Palavra · Corpus lexicographique multilingue",
+      "titulo": "Le Dictionnaire de l'Académie françoise, 1694",
+      "subtitulo": "Les pièces liminaires du Tome I, du frontispice au premier article : vingt-trois vues du fac-similé, dans l'ordre où le volume les présente.",
+      "corte": "Tranche du volume",
+      "painel": "Transcription",
+      "painel_nota": "",
+      "anterior": "Vue précédente",
+      "proxima": "Vue suivante",
+      "vista": "vue",
+      "de": "sur",
+      "gallica_link": "Voir cette vue sur Gallica",
+      "estado_pendente": "Transcription en préparation.",
+      "estado_parcial": "Transcription partielle : seuls les passages vérifiés sur l'image figurent ci-dessous.",
+      "estado_sem_texto": "Cette vue ne porte pas de texte à transcrire.",
+      "nota_tratamento": "Sur ces images. Le fond du scanner a été détouré et le point de blanc harmonisé d'une vue à l'autre. Aucune binarisation, aucun retrait des rousseurs, de la transparence du verso ni des annotations au crayon : ce qui est sur le papier reste sur l'image.",
+      "nota_fonte": "Source",
+      "nota_fonte_texto": "Source gallica.bnf.fr / Bibliothèque nationale de France, ark:/12148/bpt6k12803924. Œuvre du domaine public ; la numérisation est réutilisable à des fins non commerciales, sous réserve de mention de la source.",
+      "erro_imagens": "Images introuvables. Le navigateur a cherché",
+      "erro_imagens_2": "Le dossier paginas doit se trouver à côté du fichier index.html.",
+      "erro_textos": "Le fichier textos.json n'a pas pu être chargé. Cette page doit être servie par un serveur web, non ouverte directement depuis le disque.",
+      "fonte_rotulo": "Texte",
+      "nota_transcricao": "Transcription littérale publiée par l'Académie française, sans appareil critique : l'orthographe de 1694 est conservée, seul le ſ long est résolu en s. L'original peut être vérifié sur le fac-similé ci-contre.",
+      "nota_traducao": "",
+      "traducao_pendente": "Traduction en préparation."
+    },
+    "pt": {
+      "sobrescrito": "Palavra · Corpus lexicográfico multilíngue",
+      "titulo": "Le Dictionnaire de l'Académie françoise, 1694",
+      "subtitulo": "As peças liminares do Tomo I, do frontispício ao primeiro verbete: vinte e três vistas do fac-símile, na ordem em que o volume as apresenta.",
+      "corte": "Corte do volume",
+      "painel": "Tradução",
+      "painel_nota": "",
+      "anterior": "Vista anterior",
+      "proxima": "Próxima vista",
+      "vista": "vista",
+      "de": "de",
+      "gallica_link": "Ver esta vista no Gallica",
+      "estado_pendente": "Transcrição em preparação.",
+      "estado_parcial": "Transcrição parcial: abaixo só os trechos conferidos contra a imagem.",
+      "estado_sem_texto": "Esta vista não traz texto a transcrever.",
+      "nota_tratamento": "Sobre estas imagens. Recortou-se o fundo do scanner e uniformizou-se o ponto de branco entre as vistas. Não houve binarização nem remoção de manchas, da transparência do verso ou das anotações a lápis: o que está no papel permanece na imagem.",
+      "nota_fonte": "Fonte",
+      "nota_fonte_texto": "Source gallica.bnf.fr / Bibliothèque nationale de France, ark:/12148/bpt6k12803924. Obra em domínio público; a digitalização é reutilizável para fins não comerciais, mediante menção da fonte.",
+      "erro_imagens": "Imagens não encontradas. O navegador procurou por",
+      "erro_imagens_2": "A pasta paginas precisa estar ao lado do arquivo index.html.",
+      "erro_textos": "Não foi possível carregar textos.json. Esta página precisa ser servida por um servidor web, não aberta direto do disco.",
+      "fonte_rotulo": "Texto",
+      "nota_transcricao": "",
+      "nota_traducao": "Tradução livre, feita para este site a partir da transcrição literal publicada pela Académie française. Não substitui o original: a grafia de 1694 pode ser conferida no fac-símile ao lado.",
+      "traducao_pendente": "Tradução em preparação."
+    },
+    "es": {
+      "sobrescrito": "Palavra · Corpus lexicográfico multilingüe",
+      "titulo": "Le Dictionnaire de l'Académie françoise, 1694",
+      "subtitulo": "Las piezas preliminares del Tomo I, del frontispicio al primer artículo: veintitrés vistas del facsímil, en el orden en que el volumen las presenta.",
+      "corte": "Corte del volumen",
+      "painel": "Traducción",
+      "painel_nota": "",
+      "anterior": "Vista anterior",
+      "proxima": "Vista siguiente",
+      "vista": "vista",
+      "de": "de",
+      "gallica_link": "Ver esta vista en Gallica",
+      "estado_pendente": "Transcripción en preparación.",
+      "estado_parcial": "Transcripción parcial: abajo solo los pasajes cotejados con la imagen.",
+      "estado_sem_texto": "Esta vista no lleva texto que transcribir.",
+      "nota_tratamento": "Sobre estas imágenes. Se recortó el fondo del escáner y se uniformó el punto de blanco entre las vistas. No hubo binarización ni eliminación de manchas, de la transparencia del reverso o de las anotaciones a lápiz: lo que está en el papel permanece en la imagen.",
+      "nota_fonte": "Fuente",
+      "nota_fonte_texto": "Source gallica.bnf.fr / Bibliothèque nationale de France, ark:/12148/bpt6k12803924. Obra de dominio público; la digitalización es reutilizable con fines no comerciales, mencionando la fuente.",
+      "erro_imagens": "Imágenes no encontradas. El navegador buscó",
+      "erro_imagens_2": "La carpeta paginas debe estar junto al archivo index.html.",
+      "erro_textos": "No se pudo cargar textos.json. Esta página debe servirse desde un servidor web, no abrirse directamente desde el disco.",
+      "fonte_rotulo": "Texto",
+      "nota_transcricao": "",
+      "nota_traducao": "Traducción libre, hecha para este sitio a partir de la transcripción literal publicada por la Académie française. No sustituye al original: la grafía de 1694 puede cotejarse en el facsímil de al lado.",
+      "traducao_pendente": "Traducción en preparación."
+    },
+    "en": {
+      "sobrescrito": "Palavra · Multilingual Lexicographic Corpus",
+      "titulo": "Le Dictionnaire de l'Académie françoise, 1694",
+      "subtitulo": "The front matter of Volume I, from the frontispiece to the first entry: twenty-three views of the facsimile, in the order the volume presents them.",
+      "corte": "Fore-edge",
+      "painel": "Translation",
+      "painel_nota": "",
+      "anterior": "Previous view",
+      "proxima": "Next view",
+      "vista": "view",
+      "de": "of",
+      "gallica_link": "View this page on Gallica",
+      "estado_pendente": "Transcription in preparation.",
+      "estado_parcial": "Partial transcription: only passages verified against the image appear below.",
+      "estado_sem_texto": "This view carries no text to transcribe.",
+      "nota_tratamento": "About these images. The scanner background was cropped away and the paper white point levelled across views. There was no binarisation and no removal of foxing, show-through, or pencil annotations: what is on the paper stays in the image.",
+      "nota_fonte": "Source",
+      "nota_fonte_texto": "Source gallica.bnf.fr / Bibliothèque nationale de France, ark:/12148/bpt6k12803924. The work is in the public domain; the digitisation may be reused for non-commercial purposes with acknowledgement of the source.",
+      "erro_imagens": "Images not found. The browser looked for",
+      "erro_imagens_2": "The paginas folder must sit beside the index.html file.",
+      "erro_textos": "textos.json could not be loaded. This page must be served over a web server, not opened directly from disk.",
+      "fonte_rotulo": "Text",
+      "nota_transcricao": "",
+      "nota_traducao": "A free translation made for this site from the literal transcription published by the Académie française. It does not replace the original: the 1694 spelling can be checked against the facsimile alongside.",
+      "traducao_pendente": "Translation in preparation."
+    }
+  },
+  "secoes": [
+    {
+      "id": "frontispicio",
+      "vistas": [
+        1,
+        1
+      ],
+      "fr": "Frontispice",
+      "pt": "Frontispício",
+      "es": "Frontispicio",
+      "en": "Frontispiece"
+    },
+    {
+      "id": "guarda",
+      "vistas": [
+        2,
+        2
+      ],
+      "fr": "Garde",
+      "pt": "Guarda",
+      "es": "Guarda",
+      "en": "Flyleaf"
+    },
+    {
+      "id": "rosto",
+      "vistas": [
+        3,
+        4
+      ],
+      "fr": "Page de titre",
+      "pt": "Folha de rosto",
+      "es": "Portada",
+      "en": "Title page"
+    },
+    {
+      "id": "epistre",
+      "vistas": [
+        5,
+        8
+      ],
+      "fr": "Épistre au Roy",
+      "pt": "Épistre au Roy",
+      "es": "Épistre au Roy",
+      "en": "Épistre au Roy"
+    },
+    {
+      "id": "preface",
+      "vistas": [
+        9,
+        17
+      ],
+      "fr": "Préface",
+      "pt": "Préface",
+      "es": "Préface",
+      "en": "Préface"
+    },
+    {
+      "id": "liste",
+      "vistas": [
+        18,
+        20
+      ],
+      "fr": "Liste",
+      "pt": "Lista",
+      "es": "Lista",
+      "en": "List"
+    },
+    {
+      "id": "privilege",
+      "vistas": [
+        21,
+        21
+      ],
+      "fr": "Privilège",
+      "pt": "Privilégio",
+      "es": "Privilegio",
+      "en": "Privilege"
+    },
+    {
+      "id": "abreviaturas",
+      "vistas": [
+        22,
+        22
+      ],
+      "fr": "Abréviations",
+      "pt": "Abreviaturas",
+      "es": "Abreviaturas",
+      "en": "Abbreviations"
+    },
+    {
+      "id": "dicionario",
+      "vistas": [
+        23,
+        23
+      ],
+      "fr": "Dictionnaire",
+      "pt": "Dicionário",
+      "es": "Diccionario",
+      "en": "Dictionary"
+    }
+  ],
+  "vistas": [
+    {
+      "vista": 1,
+      "secao": "frontispicio",
+      "estado": "transcrito",
+      "fr": {
+        "rotulo": "Frontispice gravé",
+        "nota": "La Renommée couronne le buste du Roi ; au pied, un livre ouvert porte le titre de l'ouvrage et l'alphabet.",
+        "texto": "J. B. Corneille invenit — Jo. Mariette sculpsit — G. Edelinck Effigiem Regis sculp."
+      },
+      "pt": {
+        "rotulo": "Frontispício gravado",
+        "nota": "A Fama coroa o busto do Rei; ao pé, um livro aberto traz o título da obra e o alfabeto.",
+        "texto": "J. B. Corneille inventou — Jo. Mariette gravou — G. Edelinck gravou a efígie do Rei."
+      },
+      "es": {
+        "rotulo": "Frontispicio grabado",
+        "nota": "La Fama corona el busto del Rey; al pie, un libro abierto lleva el título de la obra y el alfabeto.",
+        "texto": "J. B. Corneille inventó — Jo. Mariette grabó — G. Edelinck grabó la efigie del Rey."
+      },
+      "en": {
+        "rotulo": "Engraved frontispiece",
+        "nota": "Fame crowns the King's bust; at the foot, an open book bears the work's title and the alphabet.",
+        "texto": "J. B. Corneille invented — Jo. Mariette engraved — G. Edelinck engraved the King's likeness."
+      }
+    },
+    {
+      "vista": 2,
+      "secao": "guarda",
+      "estado": "transcrito",
+      "fr": {
+        "rotulo": "Feuille de garde",
+        "nota": "Blanche. Au crayon, main moderne : note d'un bibliothécaire sur cet exemplaire.",
+        "texto": "1re Édit. (Exemplaire avec Tables)"
+      },
+      "pt": {
+        "rotulo": "Folha de guarda",
+        "nota": "Em branco. A lápis, mão moderna: nota de bibliotecário sobre este exemplar.",
+        "texto": "1.ª edição (exemplar com as tábuas)"
+      },
+      "es": {
+        "rotulo": "Hoja de guarda",
+        "nota": "En blanco. A lápiz, mano moderna: nota de bibliotecario sobre este ejemplar.",
+        "texto": "1.ª edición (ejemplar con las tablas)"
+      },
+      "en": {
+        "rotulo": "Flyleaf",
+        "nota": "Blank. In pencil, a modern hand: a librarian's note on this copy.",
+        "texto": "1st edition (copy with the tables)"
+      }
+    },
+    {
+      "vista": 3,
+      "secao": "rosto",
+      "estado": "transcrito",
+      "fr": {
+        "rotulo": "Page de titre",
+        "nota": "La date est en chiffres romains additifs — M. DC. LXXXXIV — et non MDCXCIV. Cachet rouge de la BnF et cotes au crayon.",
+        "texto": "LE DICTIONNAIRE DE L'ACADÉMIE FRANÇAISE, DÉDIÉ AU ROI. TOME PREMIER. A–L.\n\nÀ PARIS, chez la veuve de Jean-Baptiste Coignard, imprimeur ordinaire du Roi et de l'Académie française, rue Saint-Jacques, à la Bible d'Or.\n\nET chez Jean-Baptiste Coignard, imprimeur et libraire ordinaire du Roi et de l'Académie française, rue Saint-Jacques, près Saint-Séverin, au Livre d'Or.\n\n1694. Avec privilège de Sa Majesté."
+      },
+      "pt": {
+        "rotulo": "Folha de rosto",
+        "nota": "A data vem em algarismos romanos de forma aditiva — M. DC. LXXXXIV — e não MDCXCIV. Carimbo vermelho da BnF e cotas a lápis.",
+        "texto": "O DICIONÁRIO DA ACADEMIA FRANCESA, DEDICADO AO REI. TOMO PRIMEIRO. A–L.\n\nEM PARIS, na casa da viúva de Jean-Baptiste Coignard, impressor ordinário do Rei e da Academia Francesa, rua Saint-Jacques, na Bíblia de Ouro.\n\nE na casa de Jean-Baptiste Coignard, impressor e livreiro ordinário do Rei e da Academia Francesa, rua Saint-Jacques, junto a Saint-Séverin, no Livro de Ouro.\n\n1694. Com privilégio de Sua Majestade."
+      },
+      "es": {
+        "rotulo": "Portada",
+        "nota": "La fecha va en números romanos de forma aditiva — M. DC. LXXXXIV — y no MDCXCIV. Sello rojo de la BnF y signaturas a lápiz.",
+        "texto": "EL DICCIONARIO DE LA ACADEMIA FRANCESA, DEDICADO AL REY. TOMO PRIMERO. A–L.\n\nEN PARÍS, en casa de la viuda de Jean-Baptiste Coignard, impresor ordinario del Rey y de la Academia Francesa, calle Saint-Jacques, en la Biblia de Oro.\n\nY en casa de Jean-Baptiste Coignard, impresor y librero ordinario del Rey y de la Academia Francesa, calle Saint-Jacques, cerca de Saint-Séverin, en el Libro de Oro.\n\n1694. Con privilegio de Su Majestad."
+      },
+      "en": {
+        "rotulo": "Title page",
+        "nota": "The date is given in additive Roman numerals — M. DC. LXXXXIV — not MDCXCIV. Red BnF stamp and pencilled shelfmarks.",
+        "texto": "THE DICTIONARY OF THE FRENCH ACADEMY, DEDICATED TO THE KING. VOLUME ONE. A–L.\n\nAT PARIS, at the shop of the widow of Jean-Baptiste Coignard, ordinary printer to the King and to the French Academy, rue Saint-Jacques, at the Golden Bible.\n\nAND at the shop of Jean-Baptiste Coignard, ordinary printer and bookseller to the King and to the French Academy, rue Saint-Jacques, near Saint-Séverin, at the Golden Book.\n\n1694. With privilege of His Majesty."
+      }
+    },
+    {
+      "vista": 4,
+      "secao": "rosto",
+      "estado": "sem_texto",
+      "fr": {
+        "rotulo": "Verso de la page de titre",
+        "nota": "Blanc. La transparence du recto se lit dans le papier.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Verso da folha de rosto",
+        "nota": "Em branco. Vê-se a transparência do recto no papel.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Reverso de la portada",
+        "nota": "En blanco. Se ve la transparencia del anverso en el papel.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Verso of the title page",
+        "nota": "Blank. The recto shows through the paper.",
+        "texto": null
+      }
+    },
+    {
+      "vista": 5,
+      "secao": "epistre",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Épistre au Roy — ouverture",
+        "nota": "Vignette de tête : l'Académie présente le Dictionnaire à Louis XIV.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Épistre au Roy — abertura",
+        "nota": "Vinheta de cabeça: a Académie apresenta o Dicionário a Luís XIV.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Épistre au Roy — apertura",
+        "nota": "Viñeta de cabecera: la Académie presenta el Diccionario a Luis XIV.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Épistre au Roy — opening",
+        "nota": "Headpiece vignette: the Académie presents the Dictionary to Louis XIV.",
+        "texto": null
+      },
+      "inicio_pagina": "AU ROY"
+    },
+    {
+      "vista": 6,
+      "secao": "epistre",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Épistre au Roy",
+        "nota": "",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Épistre au Roy",
+        "nota": "",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Épistre au Roy",
+        "nota": "",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Épistre au Roy",
+        "nota": "",
+        "texto": null
+      },
+      "inicio_pagina": "dont l'Eloquence & la Poesie peuvent former des éloges"
+    },
+    {
+      "vista": 7,
+      "secao": "epistre",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Épistre au Roy",
+        "nota": "La langue française y est dite dominante de la plus belle partie du monde.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Épistre au Roy",
+        "nota": "A língua francesa é aí dita dominante da mais bela parte do mundo.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Épistre au Roy",
+        "nota": "La lengua francesa es allí llamada dominante de la más bella parte del mundo.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Épistre au Roy",
+        "nota": "French is here called the dominant language of the fairest part of the world.",
+        "texto": null
+      },
+      "inicio_pagina": "C'est sur de tels fondemens"
+    },
+    {
+      "vista": 8,
+      "secao": "epistre",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Épistre au Roy — fin",
+        "nota": "Se termine sur la souscription : SIRE,",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Épistre au Roy — fecho",
+        "nota": "Termina na subscrição: SIRE,",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Épistre au Roy — cierre",
+        "nota": "Termina en la suscripción: SIRE,",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Épistre au Roy — close",
+        "nota": "Ends on the subscription: SIRE,",
+        "texto": null
+      },
+      "inicio_pagina": "VOSTRE MAJESTE"
+    },
+    {
+      "vista": 9,
+      "secao": "preface",
+      "estado": "parcial",
+      "fr": {
+        "rotulo": "Préface — ouverture",
+        "nota": "Bandeau ornemental et lettrine historiée.",
+        "texto": "Après que l'Académie française eut été établie par les Lettres Patentes du feu Roi, le Cardinal de Richelieu, qui par les mêmes Lettres avait été nommé Protecteur et Chef de cette Compagnie, lui proposa de travailler premièrement à un Dictionnaire de la Langue française, et ensuite à une Grammaire, à une Rhétorique et à une Poétique."
+      },
+      "pt": {
+        "rotulo": "Préface — abertura",
+        "nota": "Friso ornamental e capitular historiada.",
+        "texto": "Depois que a Academia Francesa foi estabelecida pelas Letras Patentes do falecido Rei, o Cardeal de Richelieu, que pelas mesmas Letras fora nomeado Protetor e Chefe desta Companhia, propôs-lhe trabalhar primeiramente num Dicionário da Língua Francesa, e em seguida numa Gramática, numa Retórica e numa Poética."
+      },
+      "es": {
+        "rotulo": "Préface — apertura",
+        "nota": "Friso ornamental y capitular historiada.",
+        "texto": "Después de que la Academia Francesa fue establecida por las Letras Patentes del difunto Rey, el Cardenal de Richelieu, que por esas mismas Letras había sido nombrado Protector y Jefe de esta Compañía, le propuso trabajar primeramente en un Diccionario de la Lengua Francesa, y después en una Gramática, en una Retórica y en una Poética."
+      },
+      "en": {
+        "rotulo": "Préface — opening",
+        "nota": "Ornamental headband and historiated initial.",
+        "texto": "After the French Academy had been established by the Letters Patent of the late King, Cardinal Richelieu, who by those same Letters had been named Protector and Head of this Company, proposed that it should work first on a Dictionary of the French Language, and thereafter on a Grammar, a Rhetoric and a Poetics."
+      },
+      "inicio_pagina": "que l'Academie Françoise eut esté establie"
+    },
+    {
+      "vista": 10,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface",
+        "nota": "L'exclusion des termes des Arts et des Sciences ; la langue commune, telle qu'elle est dans le commerce ordinaire des honnestes gens.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface",
+        "nota": "A exclusão dos termos das Artes e das Ciências; a língua comum, tal como está no trato ordinário das pessoas de bem.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface",
+        "nota": "La exclusión de los términos de las Artes y las Ciencias; la lengua común, tal como está en el trato ordinario de la gente de bien.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface",
+        "nota": "The exclusion of terms from the Arts and Sciences; the common language, as found in the ordinary dealings of honnestes gens.",
+        "texto": null
+      },
+      "inicio_pagina": "On dira peut-estre qu'on ne peut jamais s'asseurer"
+    },
+    {
+      "vista": 11,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface",
+        "nota": "Les synonymes ; et la justification du classement par racines — primitifs, dérivés et composés.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface",
+        "nota": "Os sinônimos; e a justificativa do arranjo por raízes — primitivos, derivados e compostos.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface",
+        "nota": "Los sinónimos; y la justificación del orden por raíces — primitivos, derivados y compuestos.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface",
+        "nota": "Synonyms; and the defence of arrangement by roots — primitives, derivatives and compounds.",
+        "texto": null
+      },
+      "inicio_pagina": "les Synonymes, c'est à dire les mots"
+    },
+    {
+      "vista": 12,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "inicio_pagina": "selon le genre & le nombre du Substantif"
+    },
+    {
+      "vista": 13,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface",
+        "nota": "L'orthographe ancienne défendue comme vestige étymologique : Corps, Temps avec un P ; Teste, Honneste avec une S.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface",
+        "nota": "A ortografia antiga defendida como vestígio etimológico: Corps, Temps com P; Teste, Honneste com S.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface",
+        "nota": "La ortografía antigua defendida como vestigio etimológico: Corps, Temps con P; Teste, Honneste con S.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface",
+        "nota": "The old orthography defended as an etymological trace: Corps, Temps with a P; Teste, Honneste with an S.",
+        "texto": null
+      },
+      "inicio_pagina": "Mais il y en a qui se sont avilis"
+    },
+    {
+      "vista": 14,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface",
+        "nota": "La prononciation, et ce qu'on n'en peut enseigner par écrit.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface",
+        "nota": "A pronúncia, e o que dela não se pode ensinar por escrito.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface",
+        "nota": "La pronunciación, y lo que de ella no puede enseñarse por escrito.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface",
+        "nota": "Pronunciation, and what cannot be taught of it in writing.",
+        "texto": null
+      },
+      "inicio_pagina": "nonciation d'une Langue qui luy est estrangere",
+      "quebra_no_meio_da_palavra": "Pro-|nonciation"
+    },
+    {
+      "vista": 15,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface",
+        "nota": "",
+        "texto": null
+      },
+      "inicio_pagina": "vres d'observations sur la Langue Latine",
+      "quebra_no_meio_da_palavra": "Li-|vres"
+    },
+    {
+      "vista": 16,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface",
+        "nota": "L'interruption des travaux et la reprise régulière à partir de 1651.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface",
+        "nota": "A interrupção dos trabalhos e a retomada regular a partir de 1651.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface",
+        "nota": "La interrupción de los trabajos y la reanudación regular a partir de 1651.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface",
+        "nota": "The interruption of the work and its regular resumption from 1651.",
+        "texto": null
+      },
+      "inicio_pagina": "fection particuliere pour cette Compagnie",
+      "quebra_no_meio_da_palavra": "af-|fection"
+    },
+    {
+      "vista": 17,
+      "secao": "preface",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Préface — fin",
+        "nota": "Colbert et l'épisode de la définition d'AMY.",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Préface — fecho",
+        "nota": "Colbert e o episódio da definição de AMY.",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Préface — cierre",
+        "nota": "Colbert y el episodio de la definición de AMY.",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "Préface — close",
+        "nota": "Colbert and the episode of the definition of AMY.",
+        "texto": null
+      },
+      "inicio_pagina": "Monsieur Colbert qui estoit de l'Academie"
+    },
+    {
+      "vista": 18,
+      "secao": "liste",
+      "estado": "parcial",
+      "fr": {
+        "rotulo": "Liste de l'Académie françoise",
+        "nota": "Chaque académicien est donné avec sa date de réception et le nom de celui à qui il a succédé.",
+        "texto": "LISTE DE L'ACADÉMIE FRANÇAISE.\n\nLE ROI, PROTECTEUR, après le décès de Monsieur le Chancelier Séguier, qui avait succédé à Monsieur le Cardinal de Richelieu.\n\nMESSIEURS"
+      },
+      "pt": {
+        "rotulo": "Liste de l'Académie françoise",
+        "nota": "Cada acadêmico vem com a data de recepção e o nome de quem sucedeu.",
+        "texto": "LISTA DA ACADEMIA FRANCESA.\n\nO REI, PROTETOR, após o falecimento do senhor Chanceler Séguier, que havia sucedido ao senhor Cardeal de Richelieu.\n\nSENHORES"
+      },
+      "es": {
+        "rotulo": "Liste de l'Académie françoise",
+        "nota": "Cada académico se da con su fecha de recepción y el nombre de aquel a quien sucedió.",
+        "texto": "LISTA DE LA ACADEMIA FRANCESA.\n\nEL REY, PROTECTOR, tras el fallecimiento del señor Canciller Séguier, que había sucedido al señor Cardenal de Richelieu.\n\nSEÑORES"
+      },
+      "en": {
+        "rotulo": "Liste de l'Académie françoise",
+        "nota": "Each academician is given with his date of reception and the name of the man he succeeded.",
+        "texto": "LIST OF THE FRENCH ACADEMY.\n\nTHE KING, PROTECTOR, following the death of the Chancellor Séguier, who had succeeded Cardinal Richelieu.\n\nGENTLEMEN"
+      }
+    },
+    {
+      "vista": 19,
+      "secao": "liste",
+      "estado": "pendente",
+      "fr": {
+        "rotulo": "Liste (suite)",
+        "nota": "",
+        "texto": null
+      },
+      "pt": {
+        "rotulo": "Lista (continuação)",
+        "nota": "",
+        "texto": null
+      },
+      "es": {
+        "rotulo": "Lista (continuación)",
+        "nota": "",
+        "texto": null
+      },
+      "en": {
+        "rotulo": "List (continued)",
+        "nota": "",
+        "texto": null
+      }
+    },
+    {
+      "vista": 20,
+      "secao": "liste",
+      "estado": "parcial",
+      "fr": {
+        "rotulo": "Fin de la Liste · début du Privilège",
+        "nota": "La liste se ferme sur Jean-Baptiste Coignard, imprimeur. Le Privilège commence sur la même page : la pièce ne coïncide pas avec la page.",
+        "texto": "PRIVILÈGE DU ROI.\n\nLouis, par la grâce de Dieu, Roi de France et de Navarre, à nos amés et féaux Conseillers les gens tenant nos Cours de Parlement, Maîtres des Requêtes ordinaires de notre Hôtel, Baillis, Sénéchaux, Prévôts, leurs Lieutenants, et à tous autres nos Officiers et Justiciers qu'il appartiendra, SALUT."
+      },
+      "pt": {
+        "rotulo": "Fim da Lista · início do Privilégio",
+        "nota": "A lista fecha em Jean-Baptiste Coignard, impressor. O Privilégio começa na mesma página: a peça não coincide com a página.",
+        "texto": "PRIVILÉGIO DO REI.\n\nLuís, pela graça de Deus, Rei de França e de Navarra, aos nossos amados e fiéis Conselheiros que compõem as nossas Cortes de Parlamento, aos Mestres dos Requerimentos ordinários da nossa Casa, Bailios, Senescais, Prebostes, seus Tenentes, e a todos os demais Oficiais e Juízes a quem competir, SAÚDE."
+      },
+      "es": {
+        "rotulo": "Fin de la Lista · inicio del Privilegio",
+        "nota": "La lista cierra con Jean-Baptiste Coignard, impresor. El Privilegio empieza en la misma página: la pieza no coincide con la página.",
+        "texto": "PRIVILEGIO DEL REY.\n\nLuis, por la gracia de Dios, Rey de Francia y de Navarra, a nuestros amados y fieles Consejeros que componen nuestras Cortes de Parlamento, a los Maestros de Peticiones ordinarios de nuestra Casa, Bailíos, Senescales, Prebostes, sus Tenientes, y a todos los demás Oficiales y Jueces a quienes corresponda, SALUD."
+      },
+      "en": {
+        "rotulo": "End of the List · start of the Privilege",
+        "nota": "The list closes on Jean-Baptiste Coignard, printer. The Privilege begins on the same page: the piece does not coincide with the page.",
+        "texto": "PRIVILEGE OF THE KING.\n\nLouis, by the grace of God, King of France and Navarre, to our beloved and faithful Councillors sitting in our Courts of Parlement, Masters of Requests ordinary of our Household, Bailiffs, Seneschals, Provosts, their Lieutenants, and to all others our Officers and Justices whom it may concern, GREETING."
+      }
+    },
+    {
+      "vista": 21,
+      "secao": "privilege",
+      "estado": "parcial",
+      "fr": {
+        "rotulo": "Privilège du Roy — fin",
+        "nota": "Le privilège avait été accordé en 1674, vingt ans avant la parution.",
+        "texto": "Signé, LOUIS. Et plus bas, Par le Roi, COLBERT.\n\nRegistré sur le Livre de la Communauté des Imprimeurs et Libraires de Paris le premier d'août 1674, suivant l'Arrêt du Parlement du 8 avril 1653 et celui du Conseil Privé du Roi du 27 février 1665. Signé, THIERRY, Syndic.\n\nL'Académie française a cédé et transporté le présent Privilège à Jean-Baptiste Coignard, son Imprimeur.\n\nAchevé d'imprimer pour la première fois le 21e jour d'août 1694."
+      },
+      "pt": {
+        "rotulo": "Privilégio do Rei — fecho",
+        "nota": "O privilégio fora concedido em 1674, vinte anos antes da publicação.",
+        "texto": "Assinado, LUÍS. E abaixo, Pelo Rei, COLBERT.\n\nRegistrado no Livro da Comunidade dos Impressores e Livreiros de Paris no primeiro dia de agosto de 1674, conforme o Acórdão do Parlamento de 8 de abril de 1653 e o do Conselho Privado do Rei de 27 de fevereiro de 1665. Assinado, THIERRY, Síndico.\n\nA Academia Francesa cedeu e transferiu o presente Privilégio a Jean-Baptiste Coignard, seu Impressor.\n\nAcabado de imprimir pela primeira vez no 21.º dia de agosto de 1694."
+      },
+      "es": {
+        "rotulo": "Privilegio del Rey — cierre",
+        "nota": "El privilegio se había concedido en 1674, veinte años antes de la publicación.",
+        "texto": "Firmado, LUIS. Y más abajo, Por el Rey, COLBERT.\n\nRegistrado en el Libro de la Comunidad de Impresores y Libreros de París el primero de agosto de 1674, conforme al Auto del Parlamento del 8 de abril de 1653 y al del Consejo Privado del Rey del 27 de febrero de 1665. Firmado, THIERRY, Síndico.\n\nLa Academia Francesa ha cedido y transferido el presente Privilegio a Jean-Baptiste Coignard, su Impresor.\n\nAcabado de imprimir por primera vez el 21.º día de agosto de 1694."
+      },
+      "en": {
+        "rotulo": "Privilege of the King — close",
+        "nota": "The privilege had been granted in 1674, twenty years before publication.",
+        "texto": "Signed, LOUIS. And below, By the King, COLBERT.\n\nRegistered in the Book of the Community of Printers and Booksellers of Paris on the first of August 1674, pursuant to the Decree of the Parlement of 8 April 1653 and that of the King's Privy Council of 27 February 1665. Signed, THIERRY, Syndic.\n\nThe French Academy has ceded and transferred the present Privilege to Jean-Baptiste Coignard, its Printer.\n\nFinished printing for the first time on the 21st day of August 1694."
+      }
+    },
+    {
+      "vista": 22,
+      "secao": "abreviaturas",
+      "estado": "transcrito",
+      "fr": {
+        "rotulo": "Explication des Abbreviations",
+        "nota": "Douze marques seulement. Aucune ne porte sur l'usage social ou le registre : celles-là restent implicites dans les articles.",
+        "texto": "EXPLICATION DES ABRÉVIATIONS dont on se sert dans ce Dictionnaire.\n\ns. m. — substantif masculin\ns. f. — substantif féminin\nadj. — adjectif\nadj. de t. g. — adjectif de tout genre\nadj. v. — adjectif verbal\nv. act. — verbe actif\nv. pass. — verbe passif\nv. n. — verbe neutre\npart. pass. — participe passif\nadv. — adverbe\nprov. — proverbialement\nfig. — figurément"
+      },
+      "pt": {
+        "rotulo": "Explication des Abbreviations",
+        "nota": "Apenas doze marcas. Nenhuma diz respeito ao uso social ou ao registro: essas ficam implícitas nos verbetes.",
+        "texto": "EXPLICAÇÃO DAS ABREVIATURAS de que se serve este Dicionário.\n\ns. m. — substantivo masculino\ns. f. — substantivo feminino\nadj. — adjetivo\nadj. de t. g. — adjetivo de todo gênero\nadj. v. — adjetivo verbal\nv. act. — verbo ativo\nv. pass. — verbo passivo\nv. n. — verbo neutro\npart. pass. — particípio passivo\nadv. — advérbio\nprov. — proverbialmente\nfig. — figuradamente"
+      },
+      "es": {
+        "rotulo": "Explication des Abbreviations",
+        "nota": "Solo doce marcas. Ninguna atañe al uso social ni al registro: esas quedan implícitas en los artículos.",
+        "texto": "EXPLICACIÓN DE LAS ABREVIATURAS de que se sirve este Diccionario.\n\ns. m. — sustantivo masculino\ns. f. — sustantivo femenino\nadj. — adjetivo\nadj. de t. g. — adjetivo de todo género\nadj. v. — adjetivo verbal\nv. act. — verbo activo\nv. pass. — verbo pasivo\nv. n. — verbo neutro\npart. pass. — participio pasivo\nadv. — adverbio\nprov. — proverbialmente\nfig. — figuradamente"
+      },
+      "en": {
+        "rotulo": "Explication des Abbreviations",
+        "nota": "Twelve marks only. None concerns social usage or register: those stay implicit in the entries.",
+        "texto": "EXPLANATION OF THE ABBREVIATIONS used in this Dictionary.\n\ns. m. — masculine noun\ns. f. — feminine noun\nadj. — adjective\nadj. de t. g. — adjective of common gender\nadj. v. — verbal adjective\nv. act. — active verb\nv. pass. — passive verb\nv. n. — neuter verb\npart. pass. — passive participle\nadv. — adverb\nprov. — proverbially\nfig. — figuratively"
+      }
+    },
+    {
+      "vista": 23,
+      "secao": "dicionario",
+      "estado": "parcial",
+      "fr": {
+        "rotulo": "Première page du dictionnaire",
+        "nota": "La devise du bandeau vient de l'Art poétique d'Horace : l'usage, à qui appartient le droit et la norme du parler.",
+        "texto": "SI VOLET USUS\n\nDICTIONNAIRE DE L'ACADÉMIE FRANÇAISE.\n\nA"
+      },
+      "pt": {
+        "rotulo": "Primeira página do dicionário",
+        "nota": "O mote da vinheta vem da Arte poética de Horácio: o uso, a quem pertence o direito e a norma do falar.",
+        "texto": "SI VOLET USUS\n\nDICIONÁRIO DA ACADEMIA FRANCESA.\n\nA"
+      },
+      "es": {
+        "rotulo": "Primera página del diccionario",
+        "nota": "El lema de la viñeta viene del Arte poética de Horacio: el uso, a quien pertenece el derecho y la norma del hablar.",
+        "texto": "SI VOLET USUS\n\nDICCIONARIO DE LA ACADEMIA FRANCESA.\n\nA"
+      },
+      "en": {
+        "rotulo": "First page of the dictionary",
+        "nota": "The motto on the headpiece comes from Horace's Ars Poetica: usage, in whose hands lie the right and the rule of speech.",
+        "texto": "SI VOLET USUS\n\nDICTIONARY OF THE FRENCH ACADEMY.\n\nA"
+      }
+    }
+  ],
+  "_fontes_texto": {
+    "preface": {
+      "credito": "Académie française, « Préface de la première édition (1694) », in Les neuf préfaces du Dictionnaire.",
+      "url": "https://www.academie-francaise.fr/le-dictionnaire-les-neuf-prefaces/preface-de-la-premiere-edition-1694",
+      "natureza": "Transcrição literal, sem aparato crítico. O ſ longo foi resolvido em s.",
+      "pendencia": "Confirmar os termos de uso com a Académie française antes da publicação, junto com as demais autorizações."
+    }
+  }
+}
